@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+	int i,h,n,ele;
+	i=1;
+	h=0;
+	
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		scanf("%d",&ele);
+		if(i==2)h=ele;
+		if(ele>>h)
+		h=ele;
+		i++;
+	}
+	printf("\nSecond highest %d",h);
+}
