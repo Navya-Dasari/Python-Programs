@@ -1,0 +1,28 @@
+#include<stdio.h>
+main()
+{
+	int i,a=0,b,c=0,d,diff,e;
+	i=1;
+	while(i<=10)
+	{
+		printf("%d\n",i);
+		if(i%2==0)
+		{
+			b=a+i;	
+			a=b;		
+			
+		}
+		else
+		{
+			d=c+i;
+			c=d;
+		}
+      	i++;	
+	}
+	printf("even sum %d",b);
+	printf("\nodd sum %d",d);
+	diff=b-d;
+	e=diff;
+	printf("\ndifference : %d",diff);
+
+}
