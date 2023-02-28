@@ -1,0 +1,26 @@
+#include<stdio.h>
+main()
+{
+	int n,r,sum,temp;
+	int s,e;
+	scanf("%d %d",&s,&e);
+	printf("Armstrong numbers : %d",temp);
+	for(n=s;n<=e;n++)
+	{
+		temp=n;
+		sum=0;
+			while(temp!=0)
+			{
+				r=temp%10;
+				temp=temp/10;
+				sum=sum+(r*r*r);
+			}
+		if(sum==n)
+		{
+			printf("%d\n",n);
+		}
+
+	}
+		printf("\n");
+
+}
