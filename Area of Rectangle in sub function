@@ -1,0 +1,14 @@
+#include<stdio.h>
+main()
+{
+	int l,a,b;
+	scanf("%d %d",&l,&b);
+	a=rectangle(l,b);
+	printf("\nArea of rectangle = %d",a);
+}
+int rectangle(int l,int b)
+{
+	int i;
+	i=l*b;
+	return i;
+}
