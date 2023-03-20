@@ -1,0 +1,27 @@
+#include <stdio.h>
+int add(int x, int y);
+int subtract(int x, int y);
+int multiply(int x, int y);
+float divide(int x, int y);
+int main() {
+    int a, b;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    printf("Sum: %d\n", add(a, b));
+    printf("Difference: %d\n", subtract(a, b));
+    printf("Product: %d\n", multiply(a, b));
+    printf("Quotient: %f\n", divide(a, b));
+    return 0;
+}
+int add(int x, int y) {
+    return x + y;
+}
+int subtract(int x, int y) {
+    return x - y;
+}
+int multiply(int x, int y) {
+    return x * y;
+}
+float divide(int x, int y) {
+    return (float) x / y;
+}
