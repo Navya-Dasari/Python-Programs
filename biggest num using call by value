@@ -1,0 +1,27 @@
+#include<stdio.h>
+int biggest(int a,int b,int c);
+main()
+{
+	int a,b,c;
+	scanf("%d %d %d",&a,&b,&c);
+	int big=biggest(a,b,c);
+	printf("%d",big);
+	return 0;
+}
+int biggest(int a,int b,int c)
+{
+	if(a>b)
+	{
+		if(a>c)
+		return a;
+		else
+		return c;
+	}
+	else
+	{
+		if(b>c)
+		return b;
+		else
+		return c;
+	}
+}
